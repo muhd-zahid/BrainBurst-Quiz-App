@@ -1,22 +1,15 @@
-# BrainBurst Quiz App
+## About
+BrainBurst is a general knowledge quiz app designed to test your brain across multiple topics including science, geography, history, technology and math. Every game is different because 10 questions are randomly picked from a pool of 25 questions.
 
-A fun and interactive quiz app built with HTML, CSS and JavaScript.
+## Challenges Faced
+- Implementing random question selection
+- Building a countdown timer
+- Creating smooth screen transitions
+- Saving leaderboard data locally
 
-## Features
-- 25 questions with 10 randomly selected each game
-- 15 second timer per question
-- Green/red feedback on answers
-- Score tracking
-- Top 5 leaderboard
-- Progress bar
+## Future Plans
+- Add more question categories
+- Online multiplayer leaderboard
+- Sound effects and animations
+- Mobile app version
 
-## How to Play
-1. Enter your name
-2. Click Let's Go
-3. Answer 10 random questions
-4. See your score and leaderboard!
-
-## Built With
-- HTML
-- CSS  
-- JavaScript
