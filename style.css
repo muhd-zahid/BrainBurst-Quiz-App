@@ -1,0 +1,128 @@
+/* resetting browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'segoe UI' , sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* main container for all screens */
+#home-screen, #quiz-screen, #result-screen {
+    background: #16213e;
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #e94560;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    background: #0f3460;
+    color: #fff;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c73652;
+}
+
+/* hiding screens that arent active */
+.hidden {
+    display: none;
+}
+
+#timer {
+    font-size: 1.5rem;
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+#question-text {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#score-display {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #aaa;
+}
+#home-screen button {
+    margin-top: 15px;
+    width: 100%;
+}
+body::before {
+    display: none;
+}
+#progress-bar-container {
+    background: #0f3460;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 15px;
+}
+
+#progress-bar {
+    background: #e94560;
+    height: 10px;
+    border-radius: 10px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+#leaderboard {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#leaderboard h3 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+#leaderboard-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #0f3460;
+    color: #aaa;
+    list-style: none;
+}

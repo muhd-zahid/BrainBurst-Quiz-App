@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>brainburst  -  quiz app</title>
+    <! -- main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Home Screen-->
+    <div id="home-screen">
+        <h1>BrainBurst</h1>
+        <p>test your knowledge</p>
+        <input type="text" id="username" placeholder="Enter Your Name" autocomplete="off">
+        <button onclick="startGame()">Let's Go!</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="hidden">
+        <div id="timer"> 15</div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="question-number"> Question 1/10</div>
+        <div id="question-text">question goes here</div>
+        <div id="options"></div>
+        <div id="score-display">score: 0</div>
+    </div> 
+
+    <!--result screen-->
+    <div id="result-screen" class="hidden">
+        <h2>Quiz complete!</h2>
+        <p id="final-score"></p>
+        <button onclick="restartGame()">Play Again</button>
+        <div id="leaderboard"><h3> Top Scores</h3><ul id="leaderboard-list"></ul></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
